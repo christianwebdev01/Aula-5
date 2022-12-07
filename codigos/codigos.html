@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&display=swap');
+        dt{
+            font-family: "Segoe UI",Arial,sans-serif;
+            margin-left: 10px;
+            margin-bottom: 10px;
+            font-weight: 400;
+           font-size: 24px;
+        }
+        dd{
+            margin-left: 10px;
+            margin-bottom: 25px;
+            
+        }
+        
+    #article1{
+        background-color: rgb(194, 194, 194);
+        display: flex;
+        height: 550px;
+        display: block;
+        padding: 10px;
+        border-radius: 5px;
+        font-family: "Segoe UI",Arial,sans-serif;
+        width: 650px;
+    }
+    #article2{
+        background-color: rgb(194, 194, 194);
+        display: flex;
+        height: 660px;
+        display: block;
+        padding: 10px;
+        border-radius: 5px;
+        font-family: "Segoe UI",Arial,sans-serif;
+        width: 650px;
+    }   
+    #article3{
+        background-color: rgb(194, 194, 194);
+        display: flex;
+        height: 610px;
+        display: block;
+        padding: 10px;
+        border-radius: 5px;
+        font-family: "Segoe UI",Arial,sans-serif;
+        width: 650px;
+    }   
+
+    
+        
+    #code1>p{
+        display: flex;
+        background-color: white;
+        height: 370px;
+        margin-left: 10px;
+        padding: 10px;
+        border-left: 4px solid #04AA6D;  
+        margin-right: 10px;
+        
+    }
+    #code2>p{
+        display: flex;
+        background-color: white;
+        height: 480px;
+        margin-left: 10px;
+        padding: 10px;
+        border-left: 4px solid #04AA6D;  
+        margin-right: 10px;
+        
+    }
+    #code3>p{
+        display: flex;
+        background-color: white;
+        height: 430px;
+        margin-left: 10px;
+        padding: 10px;
+        border-left: 4px solid #04AA6D;  
+        margin-right: 10px;
+        
+    }
+        button{
+            background-color: #04AA6D;
+        border-radius: 5px;
+        font-size: 17px;
+        font-family: 'Source Sans Pro', sans-serif;
+        padding: 6px 18px;
+        margin-bottom: 16px;
+        margin-left:10px;
+        color: white;
+        border-color: #04AA6D;
+        }
+
+    header{
+        font-family: 'Barlow Condensed', sans-serif;
+        font-weight: bold;
+        word-spacing: 4px;
+        font-size: large;
+    }
+    img{
+        width: 30px;
+        height: 20
+        3px;
+    }
+   table td{
+    border: 1px solid #1b1a1a;
+    text-align: center;
+    padding: 8px 0px 8px 0px;
+    background-color: rgb(224, 223, 223);
+   }
+   table{
+    border-collapse: collapse;
+    width: 50%;
+   }
+   table th{
+    border: 1px solid #1b1a1a;
+    text-align: center;
+    padding: 8px 0px 8px 0px;
+   }
+   a{
+    text-decoration: none;
+    color: white;
+   }
+   #logo{
+    position: fixed;
+    right: 0px;
+    top: -10px;
+    height: 100px;
+    width: 80px;
+   }
+   #logo:hover{
+    padding: 10px;
+    height: 200px;
+    width: 160px;
+    transition: 0.5s;
+    cursor: pointer;
+   }
+
+
+        
+    </style>
+</head>
+<body>
+    <header>
+       <a href="https://www.tech4me.com.br" target="_blank"><img id="logo" src="img/tec4.png" alt="Logo tech4me"></a>
+    <h1>Bem vindo programador inciante!</h1>
+    <p>Aqui neste site lhe mostraremos alguns códigos que irão te auxiliar ao criar seus primeiros porgramas!</p>
+    </header>
+    <section>
+        <article id="article1">
+            <dl>
+                <dt>Semântica</dt>
+                <dd>Significado das palavras na tag usados como forma de organização</dd>
+            </dl>
+            <code id="code1">
+                <p>&#10094;Body&#10095;<br/>
+                   &nbsp; &#10094;header&#10095;<br/>
+                    &nbsp; &nbsp; &#10094;nav&#10095;<br/>
+                    &nbsp; &nbsp; &#10094;/nav&#10095;<br/>
+                    &nbsp; &#10094;/header&#10095;<br/>
+            <br/>   &nbsp; &#10094;main&#10095;<br/>
+                    &nbsp; &nbsp; &#10094;article&#10095;<br/>
+                    &nbsp; &nbsp; &#10094;/article&#10095;<br/>
+                    &nbsp; &#10094;/main&#10095;<br/>
+
+            <br/>   &nbsp; &#10094;section&#10095;<br/>
+                    &nbsp; &nbsp; &#10094;article&#10095;<br/>
+                    &nbsp; &nbsp; &#10094;/article&#10095;<br/>
+                    &nbsp; &nbsp; &#10094;article&#10095;<br/>
+                    &nbsp; &nbsp; &#10094;/article&#10095;<br/>
+                    &nbsp; &#10094;section&#10095;<br/>
+            <br/>   &nbsp; &#10094;footer&#10095;<br/>
+                    &nbsp; &#10094;/footer&#10095<br/>
+                &#10094;Body&#10095;</p>
+            </code>
+            <button><a href="#" onclick="CopyToClipboard('code1');return false;">Copie o texto</a></button>
+        </article><br/>
+<br/>   <article id="article2">
+            <dl>
+                <dt>Lista</dt>
+                <dd>Usado para listagem ordenana ou não ordenada de itens</dd>
+            </dl>
+            <code id="code2"><p>
+                &#10094;ul&#10095; &nbsp;  &nbsp; &nbsp;  &nbsp; &#10094;!--Não ordenada--&#10095;<br/>
+                &nbsp; &#10094;li&#10095;
+                &#10094;/li&#10095;<br/>
+                &nbsp; &#10094;li&#10095;
+                &#10094;/li&#10095;<br/>
+                &nbsp; &#10094;li&#10095;
+                &#10094;/li&#10095;<br/>
+                &nbsp; &#10094;li&#10095;
+                &#10094;/li&#10095;<br/>
+                &nbsp; &#10094;li&#10095;
+                &#10094;/li&#10095;<br/>
+                &nbsp; &#10094;li&#10095;
+                &#10094;/li&#10095;<br/>
+                &nbsp; &#10094;li&#10095;
+                &#10094;/li&#10095;<br/>
+                &nbsp; &#10094;li&#10095;
+                &#10094;/li&#10095;<br/>
+                &nbsp; &#10094;li&#10095;
+                &#10094;/li&#10095;<br/>
+                &nbsp; &#10094;li&#10095;
+                &#10094;/li&#10095;<br/>
+                &nbsp; &#10094;li&#10095;
+                &#10094;/li&#10095;<br/>
+                &#10094;/ul&#10095;<br/>
+                <br/>
+
+                &#10094;ol&#10095; &nbsp;  &nbsp; &nbsp;  &nbsp; &#10094;!--Ordenada--&#10095;<br/>
+                &nbsp; &#10094;li&#10095;
+                &#10094;/li&#10095;<br/>
+                &nbsp; &#10094;li&#10095;
+                &#10094;/li&#10095;<br/>
+                &nbsp; &#10094;li&#10095;
+                &#10094;/li&#10095;<br/>
+                &nbsp; &#10094;li&#10095;
+                &#10094;/li&#10095;<br/>
+                &nbsp; &#10094;li&#10095;
+                &#10094;/li&#10095;<br/>
+                &nbsp; &#10094;li&#10095;
+                &#10094;/li&#10095;<br/>
+                &nbsp; &#10094;li&#10095;
+                &#10094;/li&#10095;<br/>
+                &nbsp; &#10094;li&#10095;
+                &#10094;/li&#10095;<br/>
+                &nbsp; &#10094;li&#10095;
+                &#10094;/li&#10095;<br/>
+                &nbsp; &#10094;li&#10095;
+                &#10094;/li&#10095;<br/>
+                &nbsp; &#10094;li&#10095;
+                &#10094;/li&#10095;<br/>
+                &#10094;/ol&#10095;<br/></p>
+            </code>
+            <button><a href="#" onclick="CopyToClipboard('code2');return false;">Copie o texto</a></button>
+        </article><br/>
+<br/>   <article id="article3">
+            <dl>
+                <dt>Formulário</dt>
+                <dd>Lhe permite criar formulários que são enviados ao backend</dd>
+            </dl>
+            <code id="code3"><p id="code3">
+                &#10094;form&#10095;<br/>
+                &nbsp;&#10094;label for=""&#10095;<br/>
+                &nbsp;&#10094;input type="radio" name="" value="" id=""&#10095;<br/>
+                <br/>
+                &nbsp;&#10094;label for=""&#10095;<br/>
+                &nbsp;&#10094;input type="text" name="" id=""&#10095;<br/>
+                <br/>
+                &nbsp;&#10094;label for=""&#10095;<br/>
+                &nbsp;&#10094;input type="password" name="" id=""&#10095;<br/>
+                <br/>
+                &nbsp;&#10094;label for=""&#10095;<br/>
+                &nbsp;&#10094;input type="email" name="" id=""&#10095;<br/>
+                <br/>
+                &nbsp;&#10094;label for=""&#10095;<br/>
+                &nbsp;&#10094;input type="checkbox" checked name="" id=""&#10095;<br/>
+                <br/>
+                &nbsp;&#10094;textarea name="comment"&#10095;<br/>
+                <br/>
+                &nbsp;&#10094;select&#10095;<br/>
+                &nbsp;&nbsp;&#10094;option value=""&#10095;A&#10094;option&#10095;<br/>
+                &nbsp;&nbsp;&#10094;option value=""&#10095;B&#10094;option&#10095;<br/>
+                &nbsp;&nbsp;&#10094;option value=""&#10095;C&#10094;option&#10095;<br/>
+                &nbsp;&nbsp;&#10094;option value=""&#10095;D&#10094;option&#10095;<br/>
+                &nbsp;&nbsp;&#10094;option value=""&#10095;E&#10094;option&#10095;<br/>
+                &nbsp;&#10094;/select&#10095;<br/></p>
+            </code>
+            <button><a href="#" onclick="CopyToClipboard('code3');return false;">Copie o texto</a></button>
+        </article><br/>
+<br/>    <table>
+            <tr>
+                <th>Atributo</th>
+                <th><img src="img/chrome.png" alt="Google chrome"></th>
+                <th><img src="img/edge.png" alt="Microsoft Edge"></th>
+                <th><img src="img/firefox.png" alt="Firefox Mozila"></th>
+                <th><img src="img/opera.png" alt="Opera"></th>
+                <th><img src="img/safari.png" alt="Safari"></th>
+            </tr>
+            <tr>
+                <td>Formulário</td>
+                <td>Sim</td>
+                <td>Sim</td>
+                <td>Sim</td>
+                <td>Sim</td>
+                <td>Sim</td>
+            </tr>
+        </table>
+    </section>
+    <script>
+        function CopyToClipboard(id)
+        {
+        var r = document.createRange();
+        r.selectNode(document.getElementById(id));
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(r);
+        document.execCommand('copy');
+        window.getSelection().removeAllRanges();
+        }
+        </script>
+ 
+    
+   
+</body>
+</html>
+
+<!--Três snippets de códigos-->
+<!--Termo e descrição-->

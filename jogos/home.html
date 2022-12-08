@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogos</title>
+    <style>
+        /*Tudo que está no header*/
+        header, #rank, #titulo{
+            position: absolute;
+            
+        }
+        #rank{
+            top: -40px;
+            left: 120px;
+        }
+        #titulo{
+            z-index: 11;
+            width: 800px;
+            top: 35px;
+            left: 1px;
+        }
+        /*Depois do Header*/
+        article{
+            position:absolute;
+            top: 120px;
+        }
+        p{
+            font-weight: bold;
+        }
+        span{
+            color: red;
+        }
+        .part1, .part2, .part3{
+            display: flex;  
+            flex-direction:row;
+            word-spacing: 4px;
+        }
+        #btn1{
+            margin-left: 90px; 
+        }
+        #btn3{
+            margin-left: 180px;
+            text-decoration: none;
+            color: red;
+        }
+        #btn1:hover , #btn2:hover, #btn3:hover{
+            padding: 20px;
+            transition: 0.6s;
+        }
+        #btn1, #btn2, #btn3{
+            text-decoration: none;
+            color: red;
+        }
+        #logo{
+            position: fixed;
+            top: 0px;
+            right: 0px;
+        }
+   
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="titulo" >Ranking top 3 jogos RPG até o momento</h1>
+        <img id="rank" src="img/rank.png" alt="Ranking" width="300px" height="150px">
+        <img id="logo" src="img/tec4.png" alt="logo tech4me" width="120">
+    </header>
+    <main>
+        <article>
+        <div class="part1">
+            <div>
+                <img src="img/p5.jpg" alt="Persona 5" width="500" height="300">
+            </div>    
+            <div style="margin-left: 10px;">
+                <h1>1 - PERSONA 5</h1>
+                <p>Jogo rpg em terceira pessoa</p>
+                <p>Número de horas: <span>80</span>(podendo chegar a 200 horas)</p>
+                <p><span>10</span> bosses</p>
+                <p><span>6</span> DLC'S</p>
+                <p>Plataformas: <span>Playstation 4 e Xbox One</span></p>
+                <p>60 <span>FPS</span></p></p>
+            </div>
+            <div>
+                <a id="btn1" href="persona5.html"><img src="img/redirect.png" alt="icone" width="50px">LINK</a>
+            </div>    
+        </div>    
+        <div class="part2">
+            <div>
+                <img src="img/ds2.jpg" alt="Dark Souls 2 Video game" width="500" height="300">
+            </div>
+            <div style="margin-left: 10px;">    
+                <h1>2 - DARK SOULS 2</h1>
+                <p>Jogo RPG em terceira pessoa</p>
+                <p>Número de horas: <span>63</span>(podendo passar de 100 horas)</p>
+                <p><span>32</span> Bosses</p>
+                <p><span>3</span> DLC'S</p>
+                <p>Plataformas: <span>Playstation 3, Xbox 360, Playstation 4 e Xbox-one</span></p>
+                <p>60 <span>FPS</span></p><br/>
+            </div>
+            <div>
+                <a id="btn2" href="darksouls2.html"><img src="img/redirect.png" alt="icone" width="50px">LINK</a>
+            </div> 
+        </div>
+        <div class="part3">
+            <div>
+                <img src="img/genshim.jpg" alt="Genshim Impact" width="500" height="300">
+            </div>
+            <div style="margin-left:10px;">
+                <h1>3 - Genshim Impact</h1>
+                <p>Jogo RPG em terceira pessoa</p>
+                <p>Número de horas: <span>30</span></p>
+                <p><span>16</span> Bosses</p>
+                <p>Atualizações constantes</p>
+                <p>Plataformas: <span>Playstation 4, Pc e Mobile</span></p>
+                <p>60 <span>FPS</span></p>
+            </div>
+            <div>
+                <a id="btn3" href="genshin.html"><img src="img/redirect.png" alt="icone" width="50px">LINK</a>
+            </div> 
+        </div>    
+        </article>
+    </main>
+    
+</body>
+</html>
+<!--Na tela inicial, vamos ver uma tabela de Ranking, indicando o nome do jogo,
+     tipo de ambiente (primeira pessoa, RPG etc) e a jogabilidade 
+     (ou outra informação numérica) pela qual os games serão ordenados.-->

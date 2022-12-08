@@ -1,0 +1,18 @@
+img{
+    width: 520px;
+    height: 400px;
+}
+h1{
+    color: red;
+}
+body{
+    background-color: rgb(1, 171, 250);
+    display: flex;
+    gap: 10px;
+}
+article{
+    margin-top: 80px;
+    font-weight: bold;
+    word-spacing: 4px;
+    line-height: 20px;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viagens America do Sul</title>
+    <style>
+        header{
+            display: flex;
+            gap: 30px;
+            background-color: rgb(64, 186, 252);
+            padding: 10px;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        nav{
+            display: flex;
+            gap: 35px;
+            margin-left: 250px;
+            margin-top: 15px;
+        }
+        button{
+            cursor: pointer;
+            background-color: rgb(64, 186, 252);
+            color: white;
+            font-weight: bold;
+            
+        }
+        button:hover{
+            padding: 10px;
+            transition: 0.5s;
+        }
+        main{
+            display: grid;
+            gap: 1.5rem;
+            grid-template-columns: repeat(3, 1fr);
+        }
+        .icones{
+            border-radius: 50%;
+            width:50px;
+            height:40px;
+            cursor: pointer;
+            
+        }
+        #art1{
+            background-color: blueviolet;
+        }
+        #art2{
+            background-color: rgb(6, 6, 113);
+        }
+        #art3{
+            background-color: rgb(241, 255, 89);
+            color: black !important;
+        }
+        #art1, #art2, #art3{
+            padding: 25px;
+            border-radius: 20px;
+            font-weight: bold;
+            color: white;
+        }
+        aside{
+            display: flex;
+        }
+        #bit{
+            margin-top: 17px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+            <img src="imgs/airplane.png" alt="Avião" width="80">
+            <h1>Compre já suas passagens</h1>
+        <nav>
+            <a href="#"><button>Econtre mais pacotes</button></a>
+            <a href="#"><button>Sites parceiros</button></a>
+            <a href="#"><button>Contato</button></a>
+        </nav>
+    </header>
+    <h1>Opções para: América do Sul - Decole já!</h1>
+    <main>
+        <article id="art1">
+            <a href="BuenosAires.html"><img class="icones" src="imgs/buenos ares.jpg" alt="Buenos Aires"></a> 
+            <h3>Buenos aires</h3>
+            <p>Buenos Aires é a capital cosmopolita da Argentina. Seu centro é a Praça de Maio, com imponentes edifícios do século 19, como a Casa Rosada, o emblemático palácio presidencial com sacadas. Outras importantes atrações são o Teatro Colón, uma casa de ópera inaugurada em 1908 com cerca de 2.500 lugares, e o moderno museu MALBA, com sua coleção de arte latino-americana.</p>
+        </article>
+        <article id="art2">
+            <a href="machu.html"><img class="icones" src="imgs/machu-picchu.jpg" alt="Machu-picchu"></a>
+            <h3>Machu Picchu</h3>
+            <p>Machu Picchu é uma cidadela inca que fica no alto da Cordilheira dos Andes no Peru, acima do vale do rio Urubamba. Construída no século XV e posteriormente abandonada, ela é conhecida pelas sofisticadas muralhas de pedra contínuas, cujos imensos blocos foram unidos sem o uso de argamassa, pelas construções intrigantes que levam em conta o alinhamento dos astros e pelas vistas panorâmicas. A antiga utilidade dessas construções segue sendo um mistério.</p>
+        </article>
+        <article id="art3">
+            <a href="rj.html"><img class="icones" src="imgs/rio.jpg" alt="Rio de janeiro"></a>
+            <h3>Rio de Janeiro</h3>
+            <p>O Rio de Janeiro é uma grande cidade brasileira à beira-mar, famosa pelas praias de Copacabana e Ipanema, pela estátua de 38 metros de altura do Cristo Redentor, no topo do Corcovado, e pelo Pão de Açúcar, um pico de granito com teleféricos até seu cume. A cidade também é conhecida pelas grandes favelas. O empolgante Carnaval, com carros alegóricos, fantasias extravagantes e sambistas, é considerado o maior do mundo.</p>
+        </article>
+        <aside>
+            <div><h3>Aceitamos pagamentos em:</h3></div>
+            <img id="bit" src="imgs/bitcoin.png" width="50" height="30" alt="Moeda Bitcoin">
+        </aside>
+    </main>
+</body>
+</html>
